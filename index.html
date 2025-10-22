@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Swapna Pala | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background-color: #fdf6ec; /* light cream */
+            color: #3b1f2b; /* deep brownish wine text */
+        }
+
+        header {
+            background-color: #a44a5a; /* light wine */
+            color: #fdf6ec;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 5px solid #d8bca6; /* beige accent */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: #d8bca6; /* beige */
+            text-align: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #3b1f2b;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a44a5a;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #a44a5a;
+        }
+
+        /* About Section with Photo */
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #a44a5a;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .about-container p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        @media(min-width: 768px) {
+            .about-container {
+                flex-direction: row;
+                text-align: left;
+                align-items: center;
+            }
+            .about-container p {
+                max-width: 600px;
+            }
+        }
+
+        /* Portfolio Sections */
+        .portfolio-section {
+            margin-bottom: 3rem;
+        }
+
+        .portfolio-section h3 {
+            color: #a44a5a;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .portfolio-section p {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        /* Grid layout for skills/projects/hackathons/certifications */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project {
+            background-color: #fff7f3;
+            border: 1px solid #d8bca6;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .project h4 {
+            color: #a44a5a;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #a44a5a;
+            color: #fdf6ec;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Header */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sai Swapna Pala</h1>
+        <p>BCA Student | Web Developer | Creative Learner</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="swapna.jpg" alt="Sai Swapna Pala" class="profile-pic">
+            <p>
+                Hi! I’m Sai Swapna Pala, a BCA student passionate about web development and design. 
+                I enjoy creating simple, aesthetic, and meaningful projects using HTML and CSS. 
+                I have completed a short-term MERN Full Stack internship and participated in HTML & DevOps hackathons.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+
+        <!-- Technical Skills Section -->
+        <div class="portfolio-section">
+            <h3>Technical Skills</h3>
+            <div class="grid">
+                <div class="project"><h4>C</h4></div>
+                <div class="project"><h4>Python</h4></div>
+                <div class="project"><h4>Java</h4></div>
+                <div class="project"><h4>HTML</h4></div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="portfolio-section">
+            <h3>Projects</h3>
+            <div class="grid">
+                <div class="project">
+                    <h4>Portfolio Website</h4>
+                    <p>A personal portfolio showcasing my skills, education, and creative projects.</p>
+                </div>
+                <div class="project">
+                    <h4>Community Service Project on Nutrition</h4>
+                    <p>Created a webpage to spread awareness about healthy eating habits and nutrition benefits.</p>
+                </div>
+                <div class="project">
+                    <h4>Restaurant Website (HTML & CSS)</h4>
+                    <p>A responsive restaurant webpage created during an HTML hackathon.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Internship Section -->
+        <div class="portfolio-section">
+            <h3>Internship</h3>
+            <div class="project">
+                <h4>MERN Full Stack Internship</h4>
+                <p>Completed a short-term internship on MERN stack, building full-stack web applications using MongoDB, Express.js, React.js, and Node.js.</p>
+            </div>
+        </div>
+
+        <!-- Hackathons Section -->
+        <div class="portfolio-section">
+            <h3>Hackathons</h3>
+            <div class="grid">
+                <div class="project">
+                    <h4>HTML Hackathon</h4>
+                    <p>Developed a responsive restaurant webpage during an HTML hackathon.</p>
+                </div>
+                <div class="project">
+                    <h4>DevOps Hackathon</h4>
+                    <p>Participated in a DevOps hackathon, deploying projects and managing CI/CD pipelines on GitHub.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="portfolio-section">
+            <h3>Certifications</h3>
+            <div class="grid">
+                <div class="project"><h4>MEAPRO Person</h4></div>
+                <div class="project"><h4>Python Essentials</h4></div>
+                <div class="project"><h4>HTML5</h4></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:saiswapnapala09@gmail.com">saiswapnapala09@gmail.com</a></p>
+        <p>Location: Visakhapatnam, Andhra Pradesh</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Sai Swapna Pala | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
